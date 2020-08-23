@@ -1,2 +1,10 @@
-Flask==1.1.2
+git+https://github.com/ig-python/ig-markets-api-python-library
+pycrypto
 ptvsd==4.3.2 # Required for debugging.
+pytest
+nose
+pandas
+requests
+requests-cache
+munch
+six

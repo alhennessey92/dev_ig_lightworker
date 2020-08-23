@@ -6,22 +6,26 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: python-hello-world
+  name: dev-ig-lightbringer
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: python-hello-world
+      app: dev-ig-lightbringer
   template:
     metadata:
       labels:
-        app: python-hello-world
+        app: dev-ig-lightbringer
     spec:
       containers:
       - name: server
-        image: python-hello-world
+        image: dev-ig-lightbringer
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
+        resources: {}
+        tty: true
+      restartPolicy: Always
+status: {}
