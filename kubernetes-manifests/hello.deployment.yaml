@@ -21,10 +21,10 @@ spec:
       - name: server
         image: dev-ig-lightbringer
         ports:
-        - containerPort: 8080
+        - containerPort: 9092
         env:
         - name: PORT
-          value: "8080"
+          value: "9092"
         resources: {}
         tty: true
       restartPolicy: Always

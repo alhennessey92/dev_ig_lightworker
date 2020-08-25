@@ -10,7 +10,7 @@
       "request": "launch",
       "skaffoldConfig": "${workspaceFolder}/skaffold.yaml",
       "watch": false,
-      "cleanUp": false,
+      "cleanUp": true,
       "portForward": true,
       "imageRegistry": "gcr.io/gods-plan-280392"
     }

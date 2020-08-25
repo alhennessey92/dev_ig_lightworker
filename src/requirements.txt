@@ -8,3 +8,5 @@ requests
 requests-cache
 munch
 six
+certifi
+confluent-kafka[avro,json,protobuf]>=1.4.2
