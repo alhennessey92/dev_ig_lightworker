@@ -6,20 +6,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dev-ig-lightbringer
+  name: dev-ig-lightworker
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: dev-ig-lightbringer
+      app: dev-ig-lightworker
   template:
     metadata:
       labels:
-        app: dev-ig-lightbringer
+        app: dev-ig-lightworker
     spec:
       containers:
       - name: server
-        image: dev-ig-lightbringer
+        image: dev-ig-lightworker
         ports:
         - containerPort: 9092
         env:

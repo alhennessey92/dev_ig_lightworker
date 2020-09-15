@@ -1,0 +1,66 @@
+syntax = "proto3";
+
+message CandlePrice{
+    string uuid = 1;
+    string epic = 2;
+    string scale = 3;
+    int64 ltv = 4;
+    int64 ttv = 5;
+    string day_open_mid = 6;
+    string day_net_chg_mid = 7;
+    string day_perc_chg_mid = 8;
+    string day_high = 9;
+    string day_low = 10;
+    string ofr_open = 11;
+    string ofr_high = 12;
+    string ofr_low = 13;
+    string ofr_close = 14;
+    string bid_open = 15;
+    string bid_high = 16;
+    string bid_low = 17;
+    string bid_close = 18;
+    string ltp_open = 19;
+    string ltp_high = 20;
+    string ltp_low = 21;
+    string ltp_close = 22;
+    int32 cons_end = 23;
+    int32 cons_tick_count = 24;
+}
+
+message MarketPrice{
+    string uuid = 1;
+    string epic = 2;
+    float mid_open = 3;
+    float high = 4;
+    float low = 5;
+    float change = 6;
+    float change_pct = 7;
+    int64 update_time = 8;
+    int32 market_delay = 9;
+    string market_state = 10;
+    float bid = 11;
+    float offer = 12;
+    float strike_price = 13;
+    float odds = 14;
+}
+
+message Account{
+    string uuid = 1;
+    string account_identifier = 2;
+    string pnl = 3;
+    float deposit = 4;
+    float available_cash = 5;
+    float pnl_lr = 6;
+    float pnl_nlr = 7;
+    float funds = 8;
+    float margin = 9;
+    float margin_lr = 10;
+    float margin_nlr = 11;
+    string available_to_deal = 12;
+    float equity = 13;
+    float equity_used = 14;
+}
+
+message Trade{
+    string uuid = 1;
+}
